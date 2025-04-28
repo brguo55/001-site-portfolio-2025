@@ -1,0 +1,394 @@
+/* --------------------------
+1. Base Settings
+-------------------------- */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Minion Pro', serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* --------------------------
+2. Header Navigation
+-------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.nav-list li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 12px;
+}
+
+nav ul.nav-list li a:hover {
+  background-color: #f0f0f0;
+  border-radius: 6px;
+}
+
+/* --------------------------
+3. Content Wrapper
+-------------------------- */
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------------
+4. About Section (Image right / Text left)
+-------------------------- */
+.about-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 0 40px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 500px;
+  text-align: left;
+}
+
+.about-photo img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* --------------------------
+5. Miscellaneous Section (Now horizontal list)
+-------------------------- */
+.misc-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 100px 20px 40px;
+}
+
+.misc-item {
+  width: 80%;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.misc-item:last-child {
+  border-bottom: none;
+}
+
+.misc-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.misc-item p {
+  font-size: 1.1rem;
+}
+
+.misc-item img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+
+/* --------------------------
+6. Accolades Section (Now Grid of Cards)
+-------------------------- */
+.accolades-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  margin-top: 100px;
+}
+
+.accolade-card {
+  width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.accolade-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.accolade-card p {
+  font-size: 1.1rem;
+}
+
+/* --------------------------
+7. Research Section (Now Timeline Style)
+-------------------------- */
+.research-subjects {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin: 100px 20px 40px;
+}
+
+.research-section {
+  width: 80%;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.research-section h2 {
+  font-size: 1.8rem;
+  color: #4CAF50;
+  margin-bottom: 30px;
+}
+
+.research-item {
+  padding: 20px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.research-item:last-child {
+  border-bottom: none;
+}
+
+.research-item h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.research-item p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* --------------------------
+8. Projects Section (Now Personal Story Cards)
+-------------------------- */
+.projects-stories {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin: 100px 20px 40px;
+  align-items: center;
+}
+
+.project-section {
+  width: 80%;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-section h2 {
+  font-size: 1.8rem;
+  color: #4CAF50;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* --------------------------
+9. Footer
+-------------------------- */
+footer {
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+/* --------------------------
+10. Password Modal for CV
+-------------------------- */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Minion Pro', serif;
+  font-size: 1rem;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 2px solid #ccc;
+  border-radius: 40px;
+  font-size: 1rem;
+}
+
+.modal-content button {
+  padding: 12px 20px;
+  margin: 5px;
+  width: 45%;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-content button:nth-child(1) {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.modal-content button:nth-child(2) {
+  background-color: #f44336;
+  color: white;
+}
+
+#btn-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* --------------------------
+11. Responsive Design (Mobile)
+-------------------------- */
+@media screen and (max-width: 600px) {
+  nav ul.nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .projects-grid, .research-list, .timeline, .misc-grid {
+    margin: 80px 20px 30px;
+  }
+
+  .project-card, .research-item, .timeline-item, .misc-item {
+    width: 90%;
+  }
+
+  .about-photo img {
+    max-width: 300px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
+
+/* --------------------------
+12. Bonus Enhancements (Smooth Scroll + Hover Effects)
+-------------------------- */
+
+/* Smooth scrolling for anchor link jumps */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Subtle hover effect for all buttons and links */
+a:hover, button:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+/* Focus-visible outline for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 3px solid #4CAF50;
+  outline-offset: 2px;
+}
+
