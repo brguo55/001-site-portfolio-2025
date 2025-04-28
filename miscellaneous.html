@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miscellaneous — Barney Guo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./imgs/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="accolade.html">Accolades</a></li>
+        <li><a href="miscellaneous.html">Miscellaneous</a></li>
+        <li><a href="javascript:void(0);" class="cv-link">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="misc-list">
+
+    <div class="misc-item">
+      <h2>Byzantine Art Enthusiast</h2>
+      <p>I am deeply fascinated by Byzantine art, known for its rich symbolism, intricate mosaics, and spiritual intensity. Studying these masterpieces gives me a deep appreciation for historical cultural expressions.</p>
+      <img src="imgs/04_byzantine.jpg" alt="Byzantine art mosaic example" style="max-width: 100%; margin-top: 15px; border-radius: 8px;">
+    </div>
+
+    <div class="misc-item">
+      <h2>Life with Robin, My Cat</h2>
+      <p>Robin is my adorable cat who brings endless joy and energy to my life. Her playful nature and curious spirit are daily reminders to stay positive and explore the world with wonder.</p>
+      <img src="imgs/05_robin.png" alt="Robin the cat relaxing" style="max-width: 100%; margin-top: 15px; border-radius: 8px;">
+    </div>
+
+  </main>
+
+
+
+
+  <!-- Password Modal -->
+  <div class="modal" id="passwordModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Enter Password to Access CV</h2>
+      <input type="password" id="passwordInput" placeholder="Enter password">
+      <div id="btn-box">
+        <button id="passwordSubmit" onclick="verifyPassword()">Submit</button>
+        <button id="closeSubmit" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p style="text-align:center;">© 2025 Barney Guo</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

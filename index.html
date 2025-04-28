@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Barney Guo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./imgs/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="accolade.html">Accolades</a></li>
+        <li><a href="miscellaneous.html">Miscellaneous</a></li>
+        <li><a href="javascript:void(0);" class="cv-link">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="wrapper">
+
+        <main class="about-section">
+          <div class="about-content">
+            <div class="about-text">
+              <h1>Barney Guo</h1>
+              <p>I am an undergraduate student at the University of North Carolina–Chapel Hill, double majoring in Statistics & Analytics and Information Science. I have a keen interest in Information Retrieval, Full-Stack development, and leveraging Data Science within Economics. I enjoy collecting data and information to help make better decisions. On April 10, 2024, I was awarded a $4000 Wesslen Grant for research in data analytics by the ECON Department at UNC, committing to a summer research project in Labor Economics.</p>
+              <p>Email: <a href="mailto:brguo55@gmail.com">brguo55@gmail.com</a></p>
+            </div>
+            <div class="about-photo">
+              <img id="myImage" src="imgs/one.jpg" alt="Profile photo of Barney Guo">
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <p>© 2025 Barney Guo</p>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Password Modal -->
+  <div id="passwordModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Enter Password to Access CV</h2>
+      <input type="password" id="passwordInput" placeholder="Enter password">
+      <div id="btn-box">
+        <button id="passwordSubmit" onclick="verifyPassword()">Submit</button>
+        <button id="closeSubmit" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

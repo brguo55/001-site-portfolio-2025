@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accolades — Barney Guo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./imgs/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="accolade.html">Accolades</a></li>
+        <li><a href="miscellaneous.html">Miscellaneous</a></li>
+        <li><a href="javascript:void(0);" class="cv-link">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="accolades-grid">
+
+    <div class="accolade-card">
+      <h2>2025 - Research Award ($500)</h2>
+      <p>Awarded a $500 research award in recognition of outstanding undergraduate research achievements in Economics and Data Science fields.</p>
+    </div>
+
+    <div class="accolade-card">
+      <h2>2024 - Wesslen Grant</h2>
+      <p>Received a $4000 grant from UNC Economics Department for summer research in Labor Economics, focusing on labor market dynamics and mobility.</p>
+    </div>
+
+    <div class="accolade-card">
+      <h2>2023 - SURF Fellowship (Behavioral Economics)</h2>
+      <p>Awarded the Summer Undergraduate Research Fellowship (SURF) to pursue independent research in Behavioral Economics, studying decision-making under uncertainty.</p>
+    </div>
+
+    <div class="accolade-card">
+      <h2>2023 - Dean's List Honors</h2>
+      <p>Recognized for outstanding academic performance at UNC-Chapel Hill across multiple semesters with Dean's List distinction.</p>
+    </div>
+
+    <div class="accolade-card">
+      <h2>2022 - Tau Sigma Honor Society</h2>
+      <p>Inducted into the Tau Sigma National Honor Society for exceptional academic excellence among transfer students nationally.</p>
+    </div>
+
+  </main>
+
+
+  <!-- Password Modal -->
+  <div class="modal" id="passwordModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Enter Password to Access CV</h2>
+      <input type="password" id="passwordInput" placeholder="Enter password">
+      <div id="btn-box">
+        <button id="passwordSubmit" onclick="verifyPassword()">Submit</button>
+        <button id="closeSubmit" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p style="text-align:center;">© 2025 Barney Guo</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

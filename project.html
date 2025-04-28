@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Barney Guo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./imgs/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="accolade.html">Accolades</a></li>
+        <li><a href="miscellaneous.html">Miscellaneous</a></li>
+        <li><a href="javascript:void(0);" class="cv-link">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="projects-stories">
+
+    <!-- Data Science and Analytics Projects -->
+    <section class="project-section">
+      <h2>Data Science and Analytics Projects</h2>
+
+      <div class="project-card">
+        <h3><a href="docs/samplepaper.pdf" target="_blank">Exploring H-1B Visa Wage Trends</a></h3>
+        <p>Applied advanced regression models to study wage factors across industries and regions for H-1B visa holders. Conducted data cleaning, feature engineering, and comparative analysis across economic sectors to identify wage discrepancies and regional effects.</p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="docs/samplepaper.pdf" target="_blank">Cricket Match Outcome Prediction</a></h3>
+        <p>Built machine learning models using player fatigue metrics, historical match data, and game dynamics to predict cricket match outcomes with enhanced accuracy. Integrated real-time data ingestion to improve model responsiveness.</p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="docs/samplepaper.pdf" target="_blank">Health Data Analysis for Smoking Cessation Programs</a></h3>
+        <p>Utilized logistic regression and survival analysis models to predict smoking cessation outcomes. Worked with longitudinal health survey datasets, emphasizing predictive health analytics and early intervention strategy evaluation.</p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="docs/samplepaper.pdf" target="_blank">COVID-19 Spread Modeling Using Public Mobility Data</a></h3>
+        <p>Analyzed the relationship between public mobility patterns and COVID-19 spread across U.S. regions. Applied time series analysis and statistical modeling to identify key mobility factors influencing case growth rates.</p>
+      </div>
+
+    </section>
+
+    <!-- Labor Economics Applications -->
+    <section class="project-section">
+      <h2>Labor Economics Applications</h2>
+
+      <div class="project-card">
+        <h3><a href="docs/samplepaper.pdf" target="_blank">Intergenerational Mobility and Local Labor Markets</a></h3>
+        <p>Investigated the relationship between local economic conditions and intergenerational economic mobility. Analyzed linked census and IRS data to reveal regional disparities and proposed policy interventions.</p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="docs/samplepaper.pdf" target="_blank">Minimum Wage Policy Impact Analysis</a></h3>
+        <p>Evaluated the causal effects of minimum wage increases on youth employment and income distribution using quasi-experimental methods. Synthesized results across multiple U.S. states to inform labor policy debates.</p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="docs/samplepaper.pdf" target="_blank">Education and Labor Market Outcomes</a></h3>
+        <p>Explored how variations in educational attainment levels impact wage trajectories and career progression across industries. Utilized longitudinal labor market data and advanced econometric techniques.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+
+
+  <!-- Password Modal -->
+  <div class="modal" id="passwordModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Enter Password to Access CV</h2>
+      <input type="password" id="passwordInput" placeholder="Enter password">
+      <div id="btn-box">
+        <button id="passwordSubmit" onclick="verifyPassword()">Submit</button>
+        <button id="closeSubmit" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p style="text-align:center;">© 2025 Barney Guo</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
