@@ -78,6 +78,7 @@ nav ul.nav-list li a:hover {
   align-items: center;
   background-color: #f4f4f4;
   padding: 0 40px;
+  padding: 100px 40px 40px 40px;
 }
 
 .about-content {
@@ -343,9 +344,21 @@ footer {
 -------------------------- */
 @media screen and (max-width: 600px) {
   nav ul.nav-list {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+
+  nav ul.nav-list li {
+    flex: 0 1 auto;
+  }
+
+  nav ul.nav-list li a {
+    font-size: 0.9rem;
+    padding: 5px 10px;
   }
 
   .about-content {
@@ -354,11 +367,11 @@ footer {
     text-align: center;
   }
 
-  .projects-grid, .research-list, .timeline, .misc-grid {
+  .projects-grid, .research-subjects, .accolades-grid, .misc-list {
     margin: 80px 20px 30px;
   }
 
-  .project-card, .research-item, .timeline-item, .misc-item {
+  .project-card, .research-item, .accolade-card, .misc-item {
     width: 90%;
   }
 
@@ -370,6 +383,8 @@ footer {
     width: 90%;
   }
 }
+
+
 
 /* --------------------------
 12. Bonus Enhancements (Smooth Scroll + Hover Effects)
@@ -392,3 +407,33 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   outline-offset: 2px;
 }
 
+/* --------------------------
+13. Bonus Enhancements (Image Hover Animations)
+-------------------------- */
+
+#myImage {
+  width: 425px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease; 
+}
+
+#myImage:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
+}
+
+/* --------------------------
+14.
+-------------------------- */
+.hidden-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.hidden-link:hover {
+  text-decoration: none; 
+  color: inherit; 
+}
